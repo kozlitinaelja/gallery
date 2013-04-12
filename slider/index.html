@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+<div class="container">
+<div class="slider">
+  <ul>
+    <li><img src="../img/img1.jpg" alt="image1"></li>
+    <li><img src="../img/img2.jpg" alt="image2"></li>
+    <li><img src="../img/img3.jpg" alt="image3"></li>
+    <li><img src="../img/img4.jpg" alt="image4"></li>
+    <li><img src="../img/img5.jpg" alt="image5"></li>
+  </ul>
+  <div class="dir" data-action="prev"><img src="../img/prev.png" title="prev"></div>
+  <div class="dir" data-action="next"><img src="../img/next.png" title="next"></div>
+</div>  <!-- end of slider -->
+
+<div class="slider-nav">
+  <button data-action="play">Play</button>
+  <label for="enableFadeEffect">Enable Fade Effect:</label>
+  <input type="checkbox" id="enableFadeEffect" checked>
+</div>   <!-- end of slider-nav -->
+</div>   <!-- end of container -->
+<script src="../src/jquery-1.9.1.js"></script>
+<script src="../slider.js"></script>
+<script src="mySlider.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/*
+* RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+* SLIDER
+*/
+
+.slider_wrapper {
+  width: 700px;
+  height: 74px;
+  margin: 100px auto 0;
+  position: relative;
+}
+
+.slider {
+  width: 620px;
+  margin: 0 auto ;
+  height: 74px;
+  overflow: auto;
+  position: relative;
+}
+
+.slider ul {
+  width: 10000px;
+  position: relative;
+}
+
+.slider li {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.slider li.active, .slider li:hover{
+  opacity: 1;
+}
+
+.slider img {
+  max-width: 100%;
+  width: 120px;
+  height: 70px;
+  border: 2px solid #FFF;
+  transition: border 0.2s;
+}
+
+.slider li:hover img{
+  border: 2px solid #000;
+}
+
+.slider li.active img{
+  border-color: red;
+}
+
+.play {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.show {
+  z-index: 2;
+}
+
+.slide {
+  display: inline-block;
+  float: left;
+}
+
+.dir{
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0,0,0,0.3);
+  padding: 27px 10px;
+  z-index: 300;
+}
+
+.dir[data-action='next'] {
+  right: 0;
+}
+
+.dir img {
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.showDir {
+  opacity: 1;
+}
+
+.screen {
+  margin: 20px auto;
+  width: 360px;
+  position: relative;
+}
+
+.screen .dir {
+  margin-left: -20px;
+  padding: 95px 0;
+  background: none;
+}
+
+.screen .dir[data-action='next'] {
+  margin-right: -20px ;
+}
+
+
+
+
